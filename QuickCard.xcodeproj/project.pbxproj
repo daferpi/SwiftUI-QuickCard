@@ -13,6 +13,7 @@
 		0DFC32F8254ECFFF00C131F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFC32F7254ECFFF00C131F7 /* Preview Assets.xcassets */; };
 		0DFC3303254ECFFF00C131F7 /* QuickCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC3302254ECFFF00C131F7 /* QuickCardTests.swift */; };
 		0DFC330E254ECFFF00C131F7 /* QuickCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC330D254ECFFF00C131F7 /* QuickCardUITests.swift */; };
+		0DFC331F254EDAF800C131F7 /* ImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC331E254EDAF800C131F7 /* ImageLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		0DFC3309254ECFFF00C131F7 /* QuickCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFC330D254ECFFF00C131F7 /* QuickCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCardUITests.swift; sourceTree = "<group>"; };
 		0DFC330F254ECFFF00C131F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DFC331E254EDAF800C131F7 /* ImageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				0DFC32F4254ECFFF00C131F7 /* Assets.xcassets */,
 				0DFC32F9254ECFFF00C131F7 /* Info.plist */,
 				0DFC32F6254ECFFF00C131F7 /* Preview Content */,
+				0DFC331E254EDAF800C131F7 /* ImageLabelView.swift */,
 			);
 			path = QuickCard;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFC331F254EDAF800C131F7 /* ImageLabelView.swift in Sources */,
 				0DFC32F3254ECFFF00C131F7 /* ContentView.swift in Sources */,
 				0DFC32F1254ECFFF00C131F7 /* QuickCardApp.swift in Sources */,
 			);

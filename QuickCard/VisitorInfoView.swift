@@ -9,9 +9,17 @@ import SwiftUI
 
 struct VisitorInfoView: View {
     @State var user: User
+    @State var isScaled = false
+
     var body: some View {
         VStack {
             CardView(user: user)
+                .scaleEffect(isScaled ? 1.2 : 1)
+                .animation(.default)
+                .gesture(TapGesture()
+                            .onEnded{
+                                self.isScaled.toggle()
+                            })
 
             GeometryReader { proxy in
                 HStack(alignment: .bottom) {

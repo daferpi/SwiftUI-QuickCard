@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DC0CFDA2556953B009F10CF /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0CFD92556953B009F10CF /* Visit.swift */; };
+		0DC0CFDF255695A7009F10CF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC0CFDE255695A7009F10CF /* CardView.swift */; };
 		0DFC32F1254ECFFF00C131F7 /* QuickCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC32F0254ECFFF00C131F7 /* QuickCardApp.swift */; };
 		0DFC32F3254ECFFF00C131F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC32F2254ECFFF00C131F7 /* ContentView.swift */; };
 		0DFC32F5254ECFFF00C131F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DFC32F4254ECFFF00C131F7 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		0DFC3303254ECFFF00C131F7 /* QuickCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC3302254ECFFF00C131F7 /* QuickCardTests.swift */; };
 		0DFC330E254ECFFF00C131F7 /* QuickCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC330D254ECFFF00C131F7 /* QuickCardUITests.swift */; };
 		0DFC331F254EDAF800C131F7 /* ImageLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC331E254EDAF800C131F7 /* ImageLabelView.swift */; };
+		0DFC3324254EDD1200C131F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC3323254EDD1200C131F7 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DC0CFD92556953B009F10CF /* Visit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		0DC0CFDE255695A7009F10CF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0DFC32ED254ECFFF00C131F7 /* QuickCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DFC32F0254ECFFF00C131F7 /* QuickCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCardApp.swift; sourceTree = "<group>"; };
 		0DFC32F2254ECFFF00C131F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		0DFC330D254ECFFF00C131F7 /* QuickCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCardUITests.swift; sourceTree = "<group>"; };
 		0DFC330F254ECFFF00C131F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DFC331E254EDAF800C131F7 /* ImageLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelView.swift; sourceTree = "<group>"; };
+		0DFC3323254EDD1200C131F7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 			children = (
 				0DFC32F0254ECFFF00C131F7 /* QuickCardApp.swift */,
 				0DFC32F2254ECFFF00C131F7 /* ContentView.swift */,
+				0DC0CFDE255695A7009F10CF /* CardView.swift */,
 				0DFC32F4254ECFFF00C131F7 /* Assets.xcassets */,
 				0DFC32F9254ECFFF00C131F7 /* Info.plist */,
 				0DFC32F6254ECFFF00C131F7 /* Preview Content */,
 				0DFC331E254EDAF800C131F7 /* ImageLabelView.swift */,
+				0DFC3323254EDD1200C131F7 /* User.swift */,
+				0DC0CFD92556953B009F10CF /* Visit.swift */,
 			);
 			path = QuickCard;
 			sourceTree = "<group>";
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DFC3324254EDD1200C131F7 /* User.swift in Sources */,
 				0DFC331F254EDAF800C131F7 /* ImageLabelView.swift in Sources */,
 				0DFC32F3254ECFFF00C131F7 /* ContentView.swift in Sources */,
+				0DC0CFDA2556953B009F10CF /* Visit.swift in Sources */,
+				0DC0CFDF255695A7009F10CF /* CardView.swift in Sources */,
 				0DFC32F1254ECFFF00C131F7 /* QuickCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,6 +46,7 @@ struct CardView_Previews: PreviewProvider {
                             title: "Software Engineer",
                             email: "nvero@gmail.com",
                             companyUrl: "vero123@gmail.com",
-                            address: "8822 Royal Road"))
+                            address: "8822 Royal Road",
+                            visit: Visit(views: 10, events: 8, badges: 25, actions: 30, duration: 60)))
     }
 }

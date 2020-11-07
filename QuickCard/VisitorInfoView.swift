@@ -9,42 +9,43 @@ import SwiftUI
 
 struct VisitorInfoView: View {
     @State var user: User
-    @State var isScaled = false
+    @State var isChartHidden = true
 
     var body: some View {
         VStack {
             CardView(user: user)
-                .scaleEffect(isScaled ? 1.2 : 1)
-                .animation(.default)
                 .gesture(TapGesture()
                             .onEnded{
-                                self.isScaled.toggle()
+                                withAnimation(.easeInOut, {
+                                    self.isChartHidden.toggle()
+                                })
                             })
-
-            GeometryReader { proxy in
-                HStack(alignment: .bottom) {
-                    BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
-                            width: proxy.size.width * 0.16,
-                            height: proxy.size.height / CGFloat(user.visit.views),
-                           label: "Views")
-                    BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
-                            width: proxy.size.width * 0.16,
-                            height: proxy.size.height / CGFloat(user.visit.events),
-                            label: "Events")
-                    BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
-                            width: proxy.size.width * 0.16,
-                            height: proxy.size.height / CGFloat(user.visit.badges),
-                            label: "Badges")
-                    BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
-                            width: proxy.size.width * 0.16,
-                            height: proxy.size.height / CGFloat(user.visit.actions),
-                            label: "Actions")
-                    BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
-                            width: proxy.size.width * 0.16,
-                            height: proxy.size.height / CGFloat(user.visit.duration),
-                            label: "Duration")
-                }.padding()
-                .frame(height: 0.5 * proxy.size.height)
+            if !isChartHidden {
+                GeometryReader { proxy in
+                    HStack(alignment: .bottom) {
+                        BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
+                                width: proxy.size.width * 0.16,
+                                height: proxy.size.height / CGFloat(user.visit.views),
+                                label: "Views")
+                        BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
+                                width: proxy.size.width * 0.16,
+                                height: proxy.size.height / CGFloat(user.visit.events),
+                                label: "Events")
+                        BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
+                                width: proxy.size.width * 0.16,
+                                height: proxy.size.height / CGFloat(user.visit.badges),
+                                label: "Badges")
+                        BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
+                                width: proxy.size.width * 0.16,
+                                height: proxy.size.height / CGFloat(user.visit.actions),
+                                label: "Actions")
+                        BarView(color: Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)),
+                                width: proxy.size.width * 0.16,
+                                height: proxy.size.height / CGFloat(user.visit.duration),
+                                label: "Duration")
+                    }.padding()
+                    .frame(height: 0.5 * proxy.size.height)
+                }.transition(.move(edge: .bottom))
             }
         }
     }
